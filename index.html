@@ -7,6 +7,7 @@
     <title>Treact</title>
     <link rel="stylesheet" href="./styles.css">
     <script src = "https://kit.fontawesome.com/c8e4d183c2.js" crossorigin = "anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 
@@ -19,16 +20,45 @@
                         Treact
                     </a>
                 </div>
-            <ul class="nav__links">
-                <li><a class="nav__link" href="#">About</a></li>
-                <li><a class="nav__link" href="#">Blog</a></li>
-                <li><a class="nav__link" href="#">Pricing</a></li>
-                <li><a class="nav__link" href="#">Contact Us</a></li>
-                <li><a class="nav__link nav__link--login" href="#">Login</a></li>
-                <li><a class="nav__link nav__link--sign-up" href="#">Sign Up</a></li>
-            </ul>
-        
+                <ul class="nav__links">
+                    <li><a class="nav__link" href="#">About</a></li>
+                    <li><a class="nav__link" href="#">Blog</a></li>
+                    <li><a class="nav__link" href="#">Pricing</a></li>
+                    <li><a class="nav__link" href="#">Contact Us</a></li>
+                    <li><a class="nav__link nav__link--login" href="#">Login</a></li>
+                    <li><a class="nav__link nav__link--sign-up" href="#">Sign Up</a></li>
+                </ul>
             </div>
+            <button class="btn__menu button__hover" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+             </button>
+             <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close button__hover" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="mobile-nav__links--wrapper">
+                    <ul class="mobile-nav__links">
+                        <li class="nav__link">
+                            <a href="https://treact.owaiskhan.me/#" class="nav__link--anchor page-link">About</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="https://treact.owaiskhan.me/#" class="nav__link--anchor page-link">Blog</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="https://treact.owaiskhan.me/#" class="nav__link--anchor page-link">Pricing</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="https://treact.owaiskhan.me/#" class="nav__link--anchor page-link">Contact Us</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="https://treact.owaiskhan.me/#" class="nav__link--anchor page-link">Login</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="https://treact.owaiskhan.me/#" class="nav__link--anchor-primary page-link">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+             </div>
         </nav>
 
         <header>
@@ -47,7 +77,7 @@
                         </div>
                     </div>
                     <figure class="header__img--wrapper">
-                        <img src="./assets/home-img.svg" alt="">
+                        <img class="header__img" src="./assets/home-img.svg" alt="">
                     </figure>
                 </div>
             </div>
