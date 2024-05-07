@@ -1620,7 +1620,7 @@ input:focus, textarea:focus, select:focus {
   }
 }  
 
-@media (max-width: 376px) {
+@media (max-width: 396px) {
     .nav__container {
         
     }
@@ -1674,6 +1674,19 @@ input:focus, textarea:focus, select:focus {
         font-size: 12px;
     }
 
+    .quality__img--wrapper {
+        width: 100%;
+        padding-top: 32x;
+    }
+
+    #steps {
+        margin: 0;
+    }
+
+    .steps__container {
+        padding: 0;
+    }
+
     .steps__row {
         display: flex;
         flex-direction: column-reverse;
@@ -1685,7 +1698,7 @@ input:focus, textarea:focus, select:focus {
     }
 
     #values {
-        margin: 0;
+        margin: 24px 0;
     }
 
     .values__container {
